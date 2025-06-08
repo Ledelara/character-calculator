@@ -1,4 +1,3 @@
-import './App.css'
 import { Card } from './components/StyledComponents/Card/Card'
 
 function App() {
