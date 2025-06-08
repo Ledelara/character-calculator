@@ -4,6 +4,7 @@ export const lightTheme = {
   paragraphColor: "var(--neutral-800)",
   headerBg: "var(--neutral-0)",
   typographyBorder: "var(--neutral-200)",
+  toggleBg: "var(--neutral-200)",
 
   letterDistance: "var(--purple-400)",
 };
@@ -14,6 +15,7 @@ export const darkTheme = {
   paragraphColor: "var(--neutral-0)",
   headerBg: "var(--neutral-600)",
   typographyBorder: "var(--neutral-200)",
+  toggleBg: "var(--neutral-700)",
 
   letterDistance: "var(--purple-500)",
 };
