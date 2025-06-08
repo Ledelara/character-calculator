@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './styles/theme';
 import { GlobalStyle } from './components/StyledComponents/globalStyle';
 import HeaderComponent from './components/Header/Header';
+import './App.css';
 
 function App() {
 
