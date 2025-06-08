@@ -1,0 +1,130 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+  /* ===== CSS RESET (simplificado) ===== */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    background: ${({ theme }) => theme.bodyBg} no-repeat center center fixed;
+    color: ${({ theme }) => theme.textColor};
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ===== CSS Variables ===== */
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+  :root {
+    /* darker colours */
+    --neutral-900: #12131a;
+    --neutral-800: #21222c;
+    --neutral-700: #2a2b37;
+    --neutral-600: #404254;
+
+    /* lighter colours */
+    --neutral-200: #e4e4ef;
+    --neutral-100: #f2f2f7;
+    --neutral-0: #ffffff;
+
+    --purple-400: #d3a0fa;
+    --purple-500: #c27cf8;
+
+    --yellow-500: #ff9f00;
+
+    --orange-500: #fe8159;
+    --orange-800: #da3701;
+
+    /* fonts */
+    --ff-base: "DM Sans", sans-serif;
+
+    /* weights */
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+
+    /* sizes */
+
+    --fs-400: 1rem;
+    --fs-500: 1.25;
+    --fs-600: 1.5rem;
+    --fs-800: 2.5rem;
+    --fs-900: 4rem;
+
+    /* spacing */
+    --spacing-0: 0rem;
+    --spacing-025: 0.125rem;
+    /* 2px */
+    --spacing-050: 0.25rem;
+    /* 4px */
+    --spacing-075: 0.375rem;
+    /* 6px */
+    --spacing-100: 0.5rem;
+    /* 8px */
+    --spacing-150: 0.75rem;
+    /* 12px */
+    --spacing-200: 1rem;
+    /* 16px */
+    --spacing-250: 1.25rem;
+    /* 20px */
+    --spacing-300: 1.5rem;
+    /* 24px */
+    --spacing-400: 2rem;
+    /* 32px */
+    --spacing-500: 2.5rem;
+    /* 40px */
+    --spacing-600: 3rem;
+    /* 48px */
+    --spacing-800: 4rem;
+    /* 64px */
+    --spacing-1000: 5rem;
+    /* 80px */
+
+    /* border-radius */
+    --radius-0: 0px;
+    --radius-4: 4px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-10: 10px;
+    --radius-12: 12px;
+    --radius-16: 16px;
+    --radius-20: 20px;
+    --radius-24: 24px;
+    --radius-full: 999px;
+
+
+  /* BACKGROUND */
+  --purple-bkgd: url(./assets/pattern-character-count.svg);
+  --orange-800-bkgd: url(./assets/pattern-word-count.svg);
+  --orange-500-bkgd:  url(./assets/pattern-sentence-count.svg);
+  }
+
+  /* ===== Utility example (opcional) ===== */
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+`;
+
+const theme = {
+  colors: {
+    neutral900: "#12131a",
+    neutral0: "#ffffff",
+  },
+};
+
+export { GlobalStyle, theme };
