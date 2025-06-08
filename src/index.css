@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 :root {
   /* darker colours */
   --neutral-900: #12131a;
@@ -19,9 +21,9 @@
   --orange-800: #da3701;
 
   /* fonts */
+  --ff-base: "DM Sans", sans-serif;
 
   /* weights */
-  --ff-base: "DM Sans";
   --fw-regular: 400;
   --fw-semibold: 600;
   --fw-bold: 700;
@@ -64,7 +66,6 @@
   /* 80px */
 
   /* border-radius */
-
   --radius-0: 0px;
   --radius-4: 4px;
   --radius-6: 6px;
@@ -75,4 +76,10 @@
   --radius-20: 20px;
   --radius-24: 24px;
   --radius-full: 999px;
+
+
+/* BACKGROUND */
+--purple-bkgd: url(./assets/pattern-character-count.svg);
+--orange-800-bkgd: url(./assets/pattern-word-count.svg);
+--orange-500-bkgd:  url(./assets/pattern-sentence-count.svg);
 }
