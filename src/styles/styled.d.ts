@@ -8,5 +8,6 @@ declare module "styled-components" {
     headerBg: string;
     typographyBorder: string;
     letterDistance: string;
+    toggleBg: string;
   }
 }
