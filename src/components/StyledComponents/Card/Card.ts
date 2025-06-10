@@ -1,7 +1,7 @@
-import style from 'styled-components'
+import styled from 'styled-components'
 
 
-const Card = style.div`
+const Card = styled.div`
     border-radius: 12px;
     display: flex;
     flex-direction: column;

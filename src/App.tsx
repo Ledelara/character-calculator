@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './styles/theme';
 import { GlobalStyle } from './components/StyledComponents/globalStyle';
 import HeaderComponent from './components/Header/Header';
+import { CardComponent } from './components/Card/Card';
 import './App.css';
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
           setThemeName={setThemeName}
         />
       </header>
+      <section>
+        <CardComponent />
+      </section>
     </ThemeProvider>
   )
 }
