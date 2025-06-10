@@ -27,7 +27,7 @@ function App() {
       />
       <section className='typography-container'>
         <Typography>
-          Analyze yout text in real-time.
+          Analyze your text in real-time.
         </Typography>
       </section>
       <section>
