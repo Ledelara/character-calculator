@@ -20,12 +20,11 @@ function App() {
   return (
     <ThemeProvider theme={themeName === 'light' ? lightTheme : darkTheme}>
       <GlobalStyle />
-      <header>
-        <HeaderComponent 
-          themeName={themeName} 
-          setThemeName={setThemeName}
-        />
-      </header>
+      <HeaderComponent 
+        themeName={themeName} 
+        setThemeName={setThemeName}
+      />
+
       <section>
         <CardComponent />
       </section>
