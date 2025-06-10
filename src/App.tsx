@@ -5,6 +5,7 @@ import { GlobalStyle } from './components/StyledComponents/globalStyle';
 import HeaderComponent from './components/Header/Header';
 import { CardComponent } from './components/Card/Card';
 import './App.css';
+import { Typography } from './components/StyledComponents/Typography/Typography';
 
 function App() {
 
@@ -24,7 +25,11 @@ function App() {
         themeName={themeName} 
         setThemeName={setThemeName}
       />
-
+      <section className='typography-container'>
+        <Typography>
+          Analyze yout text in real-time.
+        </Typography>
+      </section>
       <section>
         <CardComponent />
       </section>
