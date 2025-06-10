@@ -71,7 +71,7 @@
   --radius-6: 6px;
   --radius-8: 8px;
   --radius-10: 10px;
-  --radius-12: 12px;
+  --radius--12: 12px;
   --radius-16: 16px;
   --radius-20: 20px;
   --radius-24: 24px;
@@ -79,7 +79,21 @@
 
 
 /* BACKGROUND */
---purple-bkgd: url(./assets/pattern-character-count.svg);
---orange-800-bkgd: url(./assets/pattern-word-count.svg);
---orange-500-bkgd:  url(./assets/pattern-sentence-count.svg);
+--purple--bkgd: url(./assets/pattern-character-count.svg);
+--yellow-bkgd: url(./assets/pattern-word-count.svg);
+--orange-bkgd:  url(./assets/pattern-sentence-count.svg);
 }
+
+* {
+  font-family: var(--ff-base);
+}
+
+/* SECTION CARDS */
+.card-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--spacing-300);
+}
+
