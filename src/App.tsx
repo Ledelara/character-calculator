@@ -30,7 +30,7 @@ function App() {
           Analyze your text in real-time.
         </Typography>
       </section>
-      <section>
+      <section className='card-Container'>
         <CardComponent />
       </section>
     </ThemeProvider>
